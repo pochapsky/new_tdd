@@ -3,6 +3,11 @@ package org.example;
 import org.apache.commons.collections4.BidiMap;
 import org.apache.commons.collections4.bidimap.TreeBidiMap;
 
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+import java.util.Map;
+
 public class PhoneBook {
     private BidiMap<String, String> bidimapPhoneBook;
 
@@ -26,6 +31,9 @@ public class PhoneBook {
     }
 
     public String printAllNames() {
-        return null;
+        List<String> listNameSorted = new ArrayList<>(bidimapPhoneBook.keySet());
+        Collections.sort(listNameSorted);
+        return String.join(", ", listNameSorted);
+
     }
 }

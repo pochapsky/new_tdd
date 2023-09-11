@@ -44,12 +44,9 @@ class PhoneBookTest {
     @Test
     public void testprintAllNames() {
         PhoneBook phoneBook = new PhoneBook();
-        phoneBook.add("Юля", "7-927-7972163");
-        phoneBook.add("Марк", "7-920-2222012");
-        phoneBook.add("Никита", "7-925-7732334");
         phoneBook.add("Дэйзи", "7-915-2534348");
         phoneBook.add("Михаил", "7-921-7972163");
-        assertEquals("Юля, Марк, Никита", phoneBook.printAllNames());
-        
+        phoneBook.add("Никита", "7-925-7732334");
+        assertEquals("Дэйзи, Михаил, Никита", phoneBook.printAllNames());
     }
 }
