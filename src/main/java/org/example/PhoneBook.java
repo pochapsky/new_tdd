@@ -24,4 +24,8 @@ public class PhoneBook {
 
         return bidimapPhoneBook.get(name);
     }
+
+    public String printAllNames() {
+        return null;
+    }
 }
