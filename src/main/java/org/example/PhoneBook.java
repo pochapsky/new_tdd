@@ -10,7 +10,8 @@ public class PhoneBook {
         this.bidimapPhoneBook = new TreeBidiMap<>();
     }
 
-    private static int add(String name, String phone) {
-        return 0;
+    public int add(String name, String phone) {
+        bidimapPhoneBook.putIfAbsent(name, phone);
+        return bidimapPhoneBook.size();
     }
 }

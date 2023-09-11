@@ -8,9 +8,9 @@ class PhoneBookTest {
 
 
     @Test
-    void testadd() {
+   public void testadd() {
         PhoneBook phoneBook = new PhoneBook();
-        assertEquals("7-927-7972163", phoneBook.add("Юля", "7-927-7972163"));
-        assertEquals("7-920-2222012", phoneBook.add("Марк", "7-920-2222012"));
+        assertEquals(1, phoneBook.add("Юля", "7-927-7972163"));
+        assertEquals(2, phoneBook.add("Марк", "7-920-2222012"));
     }
 }
