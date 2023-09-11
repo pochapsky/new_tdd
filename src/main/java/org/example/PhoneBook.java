@@ -15,8 +15,8 @@ public class PhoneBook {
         return bidimapPhoneBook.size();
     }
 
-    public static String findByNumber(String phone) {
+    public  String findByNumber(String phone) {
 
-        return null;
+        return bidimapPhoneBook.getKey(phone);
     }
 }

@@ -24,7 +24,7 @@ class PhoneBookTest {
         phoneBook.add("Дэйзи", "7-915-2534348");
         phoneBook.add("Михаил", "7-921-7972163");
         Assertions.assertNull(phoneBook.findByNumber("89500000000"));
-        assertEquals("Мария", phoneBook.findByNumber("89500000011"));
-        assertEquals("Алексей", phoneBook.findByNumber("89500000022"));
+        assertEquals("Юля", phoneBook.findByNumber("7-927-7972163"));
+        assertEquals("Никита", phoneBook.findByNumber("7-925-7732334"));
     }
 }
