@@ -14,4 +14,9 @@ public class PhoneBook {
         bidimapPhoneBook.putIfAbsent(name, phone);
         return bidimapPhoneBook.size();
     }
+
+    public static String findByNumber(String phone) {
+
+        return null;
+    }
 }
